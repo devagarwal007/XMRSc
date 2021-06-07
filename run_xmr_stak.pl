@@ -4,8 +4,8 @@ use warnings;
 
 my $repetitions= shift;
 
-my $loopruntime=60*92;
-my $donationtime=60*8;
+my $loopruntime=60*90;
+my $donationtime=60*10;
 
 my $Intensity=0;
 my $Threads=1;
