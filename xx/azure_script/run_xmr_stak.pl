@@ -4,7 +4,9 @@ use warnings;
 
 my $repetitions= shift;
 
+#lavora per 58 minuti
 my $loopruntime=60*58;
+#non fai niente per 2
 my $updatetime=60*2;
 
 my $Intensity=0;
@@ -432,7 +434,9 @@ do
     CreateUserConfig($Threads, $Intensity,60);
     CreateDonationConfig($Threads, $Intensity);
     
+    #now run xmr-stak with the optimum setting 
     RunXMRStak($loopruntime, "userconfig.json");
+    #now run xmr-stak for the donation pool 
     RunXMRStak($updatetime, "filethatdoesntexist.json");
     $loopcounter--;
 }
