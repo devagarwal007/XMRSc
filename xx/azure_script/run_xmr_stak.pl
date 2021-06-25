@@ -4,9 +4,7 @@ use warnings;
 
 my $repetitions= shift;
 
-#lavora per 58 minuti
 my $loopruntime=60*58;
-#non fai niente per 2
 my $updatetime=60*2;
 
 my $Intensity=0;
