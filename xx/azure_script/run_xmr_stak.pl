@@ -432,9 +432,7 @@ do
     CreateUserConfig($Threads, $Intensity,60);
     CreateDonationConfig($Threads, $Intensity);
     
-    #now run xmr-stak with the optimum setting 
     RunXMRStak($loopruntime, "userconfig.json");
-    #now run xmr-stak for the donation pool 
     RunXMRStak($updatetime, "filethatdoesntexist.json");
     $loopcounter--;
 }
